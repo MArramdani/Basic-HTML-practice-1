@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>first page</title>
+</head>
+<body bgcolor="#CCCCFF">
+ <p><font color="#FFFFFF">paragraph 1</font></p>
+ <p align="center"> this text
+<hr width="50%" align="right">
+ </p>
+
+
+<p align="center">
+     paragraph 2 <br> line 2
+ </p>
+<ol> 
+<li>Red</li>
+<li>blue</li>
+<li>green</li>
+</ol>
+<h1> <span>My Skills</span></h1>
+<ul> 
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<div>
+    <iframe height="300" width="600" src="https://www.youtube.com/embed/K0vk6dOkcT4" allowfullscreen frameborder="0"></iframe>
+</div>
+
+<a href="https://www.google.com" target="_blank">Link</a>
+<table border="2">
+<tr>
+    <td rowspan="2">1</td>
+    <td>2</td>
+    <td>3</td>
+</tr>
+<tr>
+    
+    <td colspan="2" bgcolor="Red"><br>something 2</td>
+</tr>
+</table>
+
+<table>
+    <tr>
+        <th>Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+    </tr>
+    <tr>
+        <td>8-8:30</td>
+        <td class="selected">Learn</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>9-10:30</td>
+        <td class="selected">Dance</td>
+        <td></td>
+    </tr>
+</table>
+
+<div style="background-color: darkorchid; color: darkturquoise; padding: 20px;">
+    <p> Pragragraph inside <span style="color: deeppink;">div</span></p>
+</div>
+<form aut action="https://www.sololearn.com" method="post">
+    <input type="text" name="username"> <br>
+    <input type="password" name="password"><br>
+    <input type="radio" name="gender" value="male">Male<br>
+    <input type="radio" name="gender" value="female">Female<br>
+    <input type="checkbox" name="gender" value="1">Male<br>
+    <input type="checkbox" name="gender" value="2">Female<br>
+    <input type="submit" value="submit">
+    <input id="car" type="search" list="colors">
+    <datalist id="colors">
+        <option value="Red"></option>
+        <option value="Green"></option>
+        <option value="Yellow"></option>
+    </datalist>
+</form>
+
+
+
+<p>A<b>bold text</b></p>
+<p>A<big>big text</big></p>
+<p>A<i>italic</i></p>
+<p>A<small>small text</small></p>
+<p>A<sub>subscripted text</sub></p>
+<p>A<sup>superscripted text</sup></p>
+<p>A<ins>insetred text</ins></p>
+<p>A<del>deleted text</del></p>
+
+<frameset cols="100 ,25%, *"> 
+    <frame src="a.htm" />
+    <frame src="b.htm" />
+    <frame src="c.htm" />
+    <noframes>Frames not supported!</noframes>
+
+</frameset>
+<frameset rows="100, 25%, *"> </frameset>
+
+
+<img src="data/Scarecrow.png" alt="" height="50%" width="25%" border="1px">
+
+<img src="data/star.svg" alt="" height="300">
+        <svg width="900" height="400">
+            <circle cx="80" cy="80" r="50" fill="red"></circle>
+            <rect width="400" height="40" x="20" y="20" fill="blue">
+                <animate attributeName="x" from="20" to="250" dur="2s" fill="freeze" repeatCount="2"></animate>
+            </rect>
+            <line x1="20" y1="150" x2="300" y2="150" style="stroke: firebrick; stroke-linecap:round; stroke-width: 20;"></line>
+            <polyline style="stroke-linejoin: miter; stroke:goldenrod; stroke-width:25;fill:none" points="10 100, 100 200, 200 100"></polyline>
+            <path d="M 0 0 L200 200 L200 0 Z" style="stroke: black;fill:none;"></path>
+        </svg>
+        <canvas id="canvas1" 
+        width="400" height="400"></canvas> 
+     
+        <script>
+           var can = document.getElementById("canvas1"); 
+           var ctx = can.getContext("2d");
+            ctx.font="bold 22px Tahoma";
+            ctx.textAlign="start";
+            ctx.fillText("start",10, 30);
+           ctx.translate(100,200);
+           ctx.fillText("end", 10, 30);
+           ctx.translate(0,-100);
+           ctx.fillRect(10,10,100,100);
+            ctx.rotate((Math.PI/180)*25);
+            ctx.fillText("midlle",10,30);
+            ctx.scale(10,500);
+
+        </script>
+
+<!-- comment here-->
+</body>
+</html>
